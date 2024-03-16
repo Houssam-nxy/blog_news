@@ -9,7 +9,7 @@ href="{{route('home')}}">
     <span class="sr-only"> Go back </span>
 
     <svg
-    class="size-5"
+    class="size-5 rotate-180"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"

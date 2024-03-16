@@ -2,6 +2,7 @@
 
 @section('content')
     
+
     <header>
         <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <div class="sm:flex sm:items-center sm:justify-between">
@@ -42,14 +43,40 @@
 
     <div class="flex items-center justify-center py-32">
         <div class="w-500 h-500 text-center mx-auto">
-          <h1 class="text-4xl antialiased">Hello believers!</h1><br>
-          <p class="text-lg w-[700px] text-gray-500">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p><br>
+            <h1 class="text-4xl antialiased">Hello believers!</h1><br>
+            <p class="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-500 mx-auto md:w-[80%] lg:w-[70%] xl:w-[60%]">
+                <i> At 'Believers,' we foster a culture that values individual perspectives and diverse viewpoints. We firmly believe that each person possesses a unique vision and opinion, which we encourage you to openly share. Your voice matters to us.</i>
+            </p>
+            <br>
+            <a
+                class="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-green-600 focus:outline-none focus:ring active:text-green-500"
+                href="#"
+                >
+                <span class="absolute -end-full transition-all group-hover:end-4">
+                    <svg
+                    class="size-5 rtl:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                    </svg>
+                </span>
 
-          <a
-            class="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-green-600 focus:outline-none focus:ring active:text-green-500"
+                <span class="text-sm font-medium transition-all group-hover:me-4"> Get started </span>
+            </a>
+
+            <a
+            class="group relative inline-flex items-center overflow-hidden rounded bg-green-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-green-500"
             href="#"
             >
-            <span class="absolute -end-full transition-all group-hover:end-4">
+            <span class="absolute -start-full transition-all group-hover:start-4">
                 <svg
                 class="size-5 rtl:rotate-180"
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,10 +93,12 @@
                 </svg>
             </span>
 
-            <span class="text-sm font-medium transition-all group-hover:me-4"> Get started </span>
+            <span class="text-sm font-medium transition-all group-hover:ms-4"> Read docs </span>
             </a>
+
         </div>
       </div>
       
+</div>
 @endsection
       

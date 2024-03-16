@@ -27,7 +27,7 @@ href="{{route('blogs')}}">
     <span class="sr-only"> Go back </span>
 
     <svg
-    class="size-5"
+    class="size-5 rotate-180"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
@@ -46,7 +46,7 @@ href="{{route('blogs')}}">
 
     <div class="p-4">
         <div>
-            <p class="text-2xl antialiased w-96 text-left">Mastering Laravel Accessors and Mutators: Elevating Data Interaction</p>
+            <p class="text-2xl antialiased w-96 text-left font-bold">Mastering Laravel Accessors and Mutators: Elevating Data Interaction</p>
         </div>
         <br>
         <div class="flex justify-center">
