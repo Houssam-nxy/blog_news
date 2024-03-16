@@ -1,205 +1,75 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-  </head>
-  <body>
+@extends('layout')
 
-<!-- Navigation -->
-<div class="title-bar" data-responsive-toggle="realEstateMenu" data-hide-for="small">
-  <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title">Menu</div>
-</div>
-
-<div class="top-bar" id="realEstateMenu">
-  <div class="top-bar-left">
-    <ul class="menu" data-responsive-menu="accordion">
-      <li class="menu-text">Interplanetary</li>
-      <li><a href="#">One</a></li>
-      <li><a href="#">Two</a></li>
-      <li><a href="#">Three</a></li>
-    </ul>
-  </div>
-  <div class="top-bar-right">
-    <ul class="menu">
-      <li><a href="#">My Account</a></li>
-      <li><a class="button">Login</a></li>
-    </ul>
-  </div>
-</div>
-<!-- /Navigation -->
-
-<br>
-
-<div class="row">
-
-  <div class="medium-7 large-6 columns">
-    <h1>Close Your Eyes and Open Your Mind</h1>
-    <p class="subheader">There is beauty in space, and it is orderly. There is no weather, and there is regularity. It is predictable. Everything in space obeys the laws of physics. If you know these laws, and obey them, space will treat you kindly.</p>
-    <button class="button">Take a Tour</button>
-    <button class="button">Start a free trial</button>
-  </div>
-
-  <div class="show-for-large large-3 columns">
-    <img src="https://placehold.it/400x370&text=PSR1257 + 12 C" alt="picture of space">
-  </div>
-
-  <div class="medium-5 large-3 columns">
-    <div class="callout secondary">
-      <form>
-        <div class="row">
-          <div class="small-12 columns">
-            <label>Find Your Dream Planet
-              <input type="text" placeholder="Search destinations">
-            </label>
-          </div>
-          <div class="small-12 columns">
-            <label>Number of Moons
-              <input type="number" placeholder="Moons required">
-            </label>
-            <button type="submit" class="button">Search Now!</button>
+@section('content')
+    
+    <header>
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <div class="text-center sm:text-left">
+              <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">Welcome Back, Barry!</h1>
+      
+              <p class="mt-1.5 text-sm text-gray-500">Let's write a new blog post! 🎉</p>
+            </div>
+      
+            <div class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
+              <button
+                class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 px-5 py-3 text-gray-500 transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
+                type="button">
+                <span class="text-sm font-medium"><a href="{{route('blogs')}}"> View Posts </a></span>
+      
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+              </button>
+      
+              <button
+                class="block rounded-lg bg-green-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-green-700 focus:outline-none focus:ring"
+                type="button"> <a href="{{route('create')}}"> Create Post </a></button>
+            </div>
           </div>
         </div>
-      </form>
-    </div>
-  </div>
+      </header>
 
-</div>
 
-<div class="row column">
-  <hr>
-</div>
+    <div class="flex items-center justify-center py-32">
+        <div class="w-500 h-500 text-center mx-auto">
+          <h1 class="text-4xl antialiased">Hello believers!</h1><br>
+          <p class="text-lg w-[700px] text-gray-500">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p><br>
 
-<div class="row column">
-  <p class="lead">Trending Planetary Destinations</p>
-</div>
+          <a
+            class="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-green-600 focus:outline-none focus:ring active:text-green-500"
+            href="#"
+            >
+            <span class="absolute -end-full transition-all group-hover:end-4">
+                <svg
+                class="size-5 rtl:rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+                </svg>
+            </span>
 
-<div class="row small-up-1 medium-up-2 large-up-3">
-  <div class="column">
-    <div class="callout">
-      <p>Pegasi B</p>
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-      <p class="lead">Copernican Revolution caused an uproar</p>
-      <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="callout">
-      <p>Pegasi B</p>
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-      <p class="lead">Copernican Revolution caused an uproar</p>
-      <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="callout">
-      <p>Pegasi B</p>
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-      <p class="lead">Copernican Revolution caused an uproar</p>
-      <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="callout">
-      <p>Pegasi B</p>
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-      <p class="lead">Copernican Revolution caused an uproar</p>
-      <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="callout">
-      <p>Pegasi B</p>
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-      <p class="lead">Copernican Revolution caused an uproar</p>
-      <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="callout">
-      <p>Pegasi B</p>
-      <p><img src="https://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-      <p class="lead">Copernican Revolution caused an uproar</p>
-      <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-    </div>
-  </div>
-
-</div>
-
-<div class="row column">
-  <a class="button hollow expanded">Load More</a>
-</div>
-
-<footer>
-  <div class="row expanded callout secondary">
-
-    <div class="small-6 large-3 columns">
-      <p class="lead">Offices</p>
-      <ul class="menu vertical">
-        <li><a href="#">One</a></li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
-        <li><a href="#">Four</a></li>
-      </ul>
-    </div>
-
-    <div class="small-6 large-3 columns">
-      <p class="lead">Solar Systems</p>
-      <ul class="menu vertical">
-        <li><a href="#">One</a></li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
-        <li><a href="#">Four</a></li>
-      </ul>
-    </div>
-
-    <div class="small-6 large-3 columns">
-      <p class="lead">Contact</p>
-      <ul class="menu vertical">
-        <li><a href="#"><i class="fi-social-twitter"></i> Twitter</a></li>
-        <li><a href="#"><i class="fi-social-facebook"></i> Facebook</a></li>
-        <li><a href="#"><i class="fi-social-instagram"></i> Instagram</a></li>
-        <li><a href="#"><i class="fi-social-pinterest"></i> Pinterest</a></li>
-      </ul>
-    </div>
-
-    <div class="small-6 large-3 columns">
-      <p class="lead">Offices</p>
-      <ul class="menu vertical">
-        <li><a href="#">One</a></li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
-        <li><a href="#">Four</a></li>
-      </ul>
-    </div>
-
-  </div>
-  <div class="row">
-
-    <div class="medium-6 columns">
-      <ul class="menu">
-        <li><a href="#">Legal</a></li>
-        <li><a href="#">Partner</a></li>
-        <li><a href="#">Explore</a></li>
-      </ul>
-    </div>
-
-    <div class="medium-6 columns">
-      <ul class="menu float-right">
-        <li class="menu-text">Copyright</li>
-      </ul>
-    </div>
-  </div>
-
-</footer>
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
-</html>
+            <span class="text-sm font-medium transition-all group-hover:me-4"> Get started </span>
+            </a>
+        </div>
+      </div>
+      
+@endsection
+      
